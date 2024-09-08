@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Room Features</title>
+</head>
+<body>
+    <h1>Upload Room and Replacement Images</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <label for="room_image">Room Image:</label>
+        <input type="file" name="room_image" required><br><br>
+
+        <label for="replacement_image">Replacement Image (Wall or Floor):</label>
+        <input type="file" name="replacement_image" required><br><br>
+
+        <label for="option">Select option:</label>
+        <select name="option" required>
+            <option value="">--Select an Option--</option>
+            <option value="wall">Change Wall Color</option>
+            <option value="floor">Change Flooring</option>
+        </select><br><br>
+
+        <button type="submit">Upload and Process</button>
+    </form>
+</body>
+</html>
